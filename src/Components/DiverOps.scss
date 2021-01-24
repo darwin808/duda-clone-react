@@ -1,0 +1,65 @@
+$lato: 'Lato',
+sans-serif;
+$muli: 'Mulish',
+sans-serif;
+$pt:'PT Sans Caption',
+sans-serif;
+$robot: 'Roboto',
+sans-serif;
+$green: rgb(82, 122, 35);
+
+
+.diverOps {
+    background-image: url('../Assets/about.png');
+    background-blend-mode: lighten;
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 100px;
+    font-family: $muli;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+
+
+    color: black;
+    border: 2px solid rgb(177, 174, 174);
+    padding: 4rem 3rem;
+
+
+    .diversheader {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        font-weight: lighter;
+        transition: ease-in-out 0.2s;
+
+    }
+
+    .diveritems {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        font-weight: lighter;
+        transition: ease-in-out .2s;
+    }
+
+
+    .diveritems:hover,
+    .diversheader:hover {
+
+
+        background-color: $green;
+        border-radius: 5px;
+        transform: scale(1.1);
+        color: white;
+        padding: 0.2rem 0.2rem;
+
+    }
+
+
+
+
+
+
+}

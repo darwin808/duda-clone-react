@@ -1,0 +1,135 @@
+$lato: 'Lato',
+sans-serif;
+$muli: 'Mulish',
+sans-serif;
+$pt:'PT Sans Caption',
+sans-serif;
+$robot: 'Roboto',
+sans-serif;
+$green: rgb(82, 122, 35);
+
+
+.AboutDropdown {
+    background-image: url('../Assets/about.png');
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 400px;
+    width: 700px;
+    position: absolute;
+    top: 10vh;
+    font-family: $muli;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    color: black;
+    border: 2px solid rgb(177, 174, 174);
+    padding: 4rem 3rem;
+
+
+
+    .leftAbout {
+
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: left;
+
+        .leftabouthead {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: lighter;
+            transition: ease-in-out .2s;
+        }
+
+
+        .leftabouthead:hover {
+            background-color: $green;
+            border-radius: 5px;
+            transform: scale(1.1);
+            color: white;
+            padding: 0.2rem 0.2rem;
+        }
+
+        .leftAboutitems:hover {
+            background-color: $green;
+            border-radius: 5px;
+            transform: scale(1.1);
+            color: white;
+            padding: 0.2rem 0.2rem;
+
+        }
+
+        .leftAboutitems {
+            margin-top: .7rem;
+            font-size: 1.3rem;
+            font-weight: lighter;
+            transition: ease-in-out .2s;
+
+
+
+            .fas.fa-chevron-right.fa-xs {
+                color: $green;
+            }
+
+
+        }
+
+
+
+    }
+
+
+    .righthAbout {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: left;
+
+        .rightAbouthead:hover {
+            background-color: $green;
+            border-radius: 5px;
+            transform: scale(1.1);
+            color: white;
+            padding: 0.2rem 0.2rem;
+        }
+
+        .rightAbouthead {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            transition: ease-in-out 0.2s;
+
+            font-weight: lighter;
+
+        }
+
+
+        .rightAboutitem:hover {
+            background-color: $green;
+            border-radius: 5px;
+            transform: scale(1.1);
+            color: white;
+            padding: 0.2rem 0.2rem;
+        }
+
+        .rightAboutitem {
+            margin-top: .7rem;
+            font-size: 1.3rem;
+            transition: ease-in-out 0.2s;
+            font-weight: lighter;
+
+
+            .fas.fa-chevron-right.fa-xs {
+                color: $green;
+            }
+
+
+        }
+
+
+    }
+
+
+
+
+
+}

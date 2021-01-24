@@ -1,0 +1,87 @@
+$lato: 'Lato',
+sans-serif;
+
+
+@mixin foo-pc {
+
+
+
+    .Foo {
+        height: 10vh;
+        width: 100%;
+        overflow: hidden;
+        background-color: rgb(44, 46, 58);
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 1rem 5rem;
+
+
+        .fooDesc {
+            grid-column: 1/2;
+            font-weight: lighter;
+            font-family: $lato;
+            font-size: 1.3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+    }
+
+
+}
+
+
+
+
+
+@mixin foo-small {
+
+
+
+    .Foo {
+        height: 10vh;
+        width: 100%;
+        overflow: hidden;
+        background-color: rgb(44, 46, 58);
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1rem 1rem;
+
+
+        .fooDesc {
+
+            font-weight: lighter;
+            font-family: $lato;
+            font-size: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1100px) and (max-width:2000px) {
+    @include foo-pc()
+}
+
+
+@media (min-width:200px) and (max-width:1099px) {
+    @include foo-small()
+}
